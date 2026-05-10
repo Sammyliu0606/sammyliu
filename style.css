@@ -456,21 +456,33 @@ body {
 
 /* ── Responsive ── */
 @media (max-width: 720px) {
+  body {
+    padding: 20px 20px 40px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }
 
   .photo-card {
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: visible;
+    min-height: 120px;
+    padding: 28px 24px;
+  }
+
+  .photo-name {
+    position: static;
+    font-size: 2.2rem;
   }
 
   .headshot {
-    width: 80px;
-    height: 80px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    flex-shrink: 0;
+    position: static;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 12px;
   }
 
   .side-cards {
@@ -479,10 +491,6 @@ body {
 
   .clips-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .clips-section {
-    padding: 0 16px;
   }
 }
 
@@ -501,5 +509,9 @@ body {
 
   .modal-card {
     padding: 24px 20px;
+  }
+
+  .photo-name {
+    font-size: 1.8rem;
   }
 }
