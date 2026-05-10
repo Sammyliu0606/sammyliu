@@ -341,7 +341,32 @@ overlay.addEventListener("click", (e) => {
 });
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && overlay.classList.contains("open")) {
-    closeModal();
+  if (e.key === "Escape") {
+    if (overlay.classList.contains("open")) closeModal();
+    if (cvOverlay.classList.contains("open")) closeCvModal();
   }
+});
+
+// ── CV Modal ──────────────────────────────────────────────────────────────────
+const cvOverlay   = document.getElementById("cv-modal-overlay");
+const cvBtn       = document.getElementById("cv-btn");
+const cvModalClose = document.getElementById("cv-modal-close");
+
+cvBtn.addEventListener("click", () => {
+  cvOverlay.classList.add("open");
+  cvOverlay.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  setTimeout(() => cvModalClose.focus(), 50);
+});
+
+function closeCvModal() {
+  cvOverlay.classList.remove("open");
+  cvOverlay.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  cvBtn.focus();
+}
+
+cvModalClose.addEventListener("click", closeCvModal);
+cvOverlay.addEventListener("click", (e) => {
+  if (e.target === cvOverlay) closeCvModal();
 });

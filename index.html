@@ -53,9 +53,9 @@
             </a>
           </div>
         </div>
-        <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="card cv-card">
+        <button id="cv-btn" class="card cv-card">
           Check my CV ↗
-        </a>
+        </button>
       </div>
 
     </section>
@@ -79,6 +79,15 @@
       <div class="modal-body" id="modal-body"></div>
       <div class="modal-images" id="modal-images"></div>
       <a class="modal-link" id="modal-link" target="_blank" rel="noopener noreferrer">Originally published in Mandarin &#x2197;</a>
+    </div>
+  </div>
+
+  <!-- CV Modal -->
+  <div id="cv-modal-overlay" class="modal-overlay cv-modal-overlay" aria-hidden="true">
+    <div class="cv-modal-card">
+      <button class="modal-close" id="cv-modal-close" aria-label="Close">&#x2715;</button>
+      <iframe src="assets/202605CV_Eng.pdf" class="cv-iframe" title="Sammy Liu CV"></iframe>
+      <a href="assets/202605CV_Eng.pdf" download class="modal-link cv-download">Download PDF ↓</a>
     </div>
   </div>
 

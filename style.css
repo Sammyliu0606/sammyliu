@@ -424,6 +424,36 @@ body {
   background: #333;
 }
 
+/* ── CV Modal ── */
+.cv-modal-overlay {
+  align-items: center;
+  padding: 32px;
+}
+
+.cv-modal-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 52px 40px 36px;
+  width: 100%;
+  max-width: 820px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cv-iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.cv-download {
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
 /* ── Responsive ── */
 @media (max-width: 720px) {
   .hero {
