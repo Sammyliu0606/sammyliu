@@ -201,6 +201,97 @@ const clips = [
     ],
     link: "https://www.businessweekly.com.tw/business/blog/3012111",
   },
+  {
+    title: "On the Frontlines: Taiwanese Volunteer Soldiers’ Life-and-Death Moments in Ukraine",
+    publication: "Public Television Service",
+    date: "February 14, 2025",
+    authors: "Sammy Liu",
+    thumbnail: "assets/ukraine01.png",
+    process:null,
+    description: [
+      {image: "assets/ukraine01.png"},
+      "Even in 2023, the thunder rumbling through Taipei afternoons would sometimes startle Yao Guan-jun. \"Thunder sounds a lot like artillery fire. It scares me, making me think something's happened again.\"",
+      "It's been two and a half years since he lay in trenches along Ukraine's defense lines, constantly facing air raids. Yao now has fewer dreams where he frantically scrambles for his rifle and helmet. \"I've recovered very well. I know I'm back in a safe place\"",
+      "On February 24, 2022, Russia launched a full-scale invasion of Ukraine. Ukrainian President Volodymyr Zelenskyy immediately called on the 27th for people worldwide to join the International Legion. According to Ukrainian officials, over 20,000 people from 52 countries joined the international military unit—and Yao Guan-jun was among them.",
+      {heading: "Going to War with Only 10 Bullets: \"We Were Like Meat on a Chopping Board\”"},
+      "When the then-28-year-old Yao decided to go to Ukraine, he didn't think about life and death, or how this one-way ticket might change his life. \"It was too urgent,\" he recalls. His mind was focused on rapidly preparing military equipment, processing visas, and figuring out how to enter the country smoothly given Taiwan and Ukraine had no diplomatic relations. In March, he joined the Georgian Legion—composed mainly of foreign volunteers and rumored to have a high casualty rate. \"I just chose the fastest option to deploy.\"",
+      {image: "assets/ukraine02.jpg"},
+      "After Russian forces ended their decapitation offensive against Kyiv, Yao's unit moved with the shifting front lines to Donetsk in eastern Ukraine. They were primarily responsible for frontline supply logistics, rotating between first and second lines as missions required.",
+      "Recalling those days, Yao complains that translators at the 30-minute pre-mobilization briefings would only speak for 30 seconds. \"We didn't know what weapons we'd face or how many drone sorties there'd be. They'd just tell you the assembly point, give you 10 bullets for a 10-to-20-day mission, and tell you to charge.\" New military equipment donated by various countries typically went to Ukraine's national army first, and Yao's unit—which suffered particularly high attrition—naturally got older weapons. \"When we got there, we realized we were like meat on a chopping board.\"",
+      "Lu Tzu-hao, another Taiwanese who arrived in Ukraine in March to assist in combat, joined the Carpathian Sich Battalion, a volunteer unit under the Ukrainian Army. He spent most of his time stationed in Izium, a key transportation hub in eastern Ukraine.",
+      "Lu says they constantly dug trenches, and during rotations they'd hide from artillery in those trenches. \"We had those old Soviet weapons that could only shoot 3-4 kilometers, but Russian shells could reach 20-30 kilometers.\" \"Whenever we went out to defend, I felt very close to death. They were shelling constantly.\"",
+      {image:"assets/ukraine03.jpg"},
+      "The Russia-Ukraine firefight wasn't limited to the battlefield—information and psychological warfare intensified emotions among these foreign soldiers. \"They just want to deepen the hatred,\" Yao says. Officers and fellow soldiers watched videos from both sides daily on Telegram groups, showing who'd been captured and how they were being tortured, and demonstrating \"how brutally humans can treat other humans.\"",
+      "Russia perhaps acted out of bravado or to undermine opponent morale, but Ukrainian forces similarly wanted to strengthen volunteers' resolve to resist the enemy. \"They took all of us foreigners to Bucha,\" Yao recalls. Bucha is a town near Kyiv where, after Russian forces withdrew, streets littered with civilian corpses shocked the international community. \"It was extremely shocking—trenches stretching as far as you could see, completely filled with dead bodies.\"",
+      {heading:"Flying 8,000 Kilometers from Taiwan—What Were They Fighting For?"},
+      "Lu reveals he initially hadn't planned to join the military. When he saw the Russia-Ukraine war break out, he first flew to the Poland-Ukraine border to volunteer distributing supplies. \"Mainly I saw they needed help, so I went to see what I could do.\"",
+      "However, unlike what he'd imagined before departure, Lu saw abundant aid supplies in Poland being repeatedly collected by the same people. \"But in videos, I saw people on the front lines genuinely couldn't get supplies—everything was stuck in the back.\" He kept moving toward cities closer to the front, thinking about \"helping them more directly.\" From Lviv to Irpin to Bucha and finally Kyiv, he ultimately decided to join the volunteer army because he believed this way he \"could help defend while also saving people.\"",
+      {image: "assets/ukraine04.jpg"},
+      "Yao definitively says he chose to go to war \"to fight for the welfare of the people of Taiwan, Penghu, Kinmen, and Matsu—to fight for Taiwan's sovereignty.\" He believes Taiwan similarly faces threats from a powerful neighbor. If conflicts break out in other countries and \"we don't send anyone, then by the same logic, when we need help, why would anyone come?\"",
+      "\"You have to prove you're useful first.\" Beyond training hard and doing his job well, Yao raised funds from Taiwan for helmets, ballistic plates, and medical supplies for the under-resourced volunteer units, so his comrades would at least not be like \"throwing eggs at stones\" when fighting on the front lines.",
+      "Yao says his comrades basically all understand Taiwan's geopolitical situation. Four of them—from Chile, Norway, Romania, and the U.S., who'd endured hardships together since training—promised him that \"if something happens to Taiwan, we'll come gather in Taiwan.\"",
+      {image: "assets/ukraine05.jpg"},
+      {heading: "Millions of Casualties Aren't Just Numbers: How Volunteers Live with Death"},
+      "Death is inevitable in war. Yao says there's a superstition among comrades: \"We each have three lives, like Mario—three chances. When you use them up, it's about time to go.\"",
+      "Yao describes his last life as the first time he faced a comrade's death in battle—also his closest encounter with death. During one rotation, his squad held position behind an earthen slope, experiencing sporadic shelling.",
+      "Normally, the standard procedure upon hearing artillery is to immediately lie flat in the trench for cover. However, perhaps fatigued by the constant shelling, two new soldiers who were only crouching were hit and killed right within Yao's line of sight.",
+      "\"War is inherently bloody and illogical. All deaths are commonplace—just numbers. This is something modern people find very hard to understand.\"",
+      "Although Lu was fortunate enough not to experience comrades dying in Ukraine, since returning to Taiwan he's gradually received news of 6-7 friends killed in action, including two Taiwanese volunteers he'd kept in contact with—Tseng Sheng-kuang and Wu Chung-ta.",
+      {image: "assets/ukraine06.jpg"},
+      "\"At first I couldn't sleep and even went to see a doctor about it,\" Lu admits. Initially he struggled to cope emotionally, but later reframed his thinking—his brothers had accomplished what they wanted to do. Yao says, \"We who participated in combat weren't unaware of the risks. Since we chose this, we bear the consequences ourselves. There's nothing to comment on—we were all serving our countries.\" As Wu Chung-ta, who died in action, said before his second deployment to Ukraine: \"We always have to pay some price for enjoying freedom.\"",
+      {heading:"Returning to Taiwan: The Story of Resistance Continues"},
+      "Yao Guan-jun and Lu Tzu-hao successively left Ukraine in June 2022. Three months of battlefield experience let them witness how Ukrainian land became devastated under artillery fire, and understand what one person can and cannot do amid the hatred between two nations and the interconnected problems within military systems.",
+      "After returning to Taiwan, Lu continues mailing national flags and arm patches to comrades still in Ukraine. Yao, through self-funded efforts, continued sending military equipment and medical supplies to the Georgian Legion for over eight months. Both independently emphasize that since they happened to have the opportunity to help, they'd do what was within their capabilities.",
+      "Now, as the Russia-Ukraine war approaches its third anniversary with no end in sight, Yao looks back at Taiwan's similarly precarious international situation. He believes Taiwan continues building its military and preparing for war, with better economic and military-industrial strength than Ukraine. \"We have the ability to aid others and make friends, let people know we share the same values, and thereby accumulate technology and connections—these are all key to ensuring we won't be isolated and helpless in critical situations.\"",
+      "Yao also keeps various military equipment he's procured, hoping that \"when something really happens, beyond what the state provides, we'll have extra things to defend with.\" Outside of work, Yao devotes himself to local civil defense and reserve military counseling. \"There are many ways to serve the country. Doing your own job well is also serving the nation loyally.\"",
+    ],
+    link: "https://news.pts.org.tw/article/739175",
+  },
+  {
+  title: "Taiwan’s Western Tourism Booms as Neighbors Stay Away; Japanese Visitors Down 50%, Chinese Down 90%",
+  publication: "Business Weekly",
+  date: "March 1, 2024",
+  authors: "Sammy Liu",
+  thumbnail: "assets/tourism00.jpeg",
+  link: "https://www.businessweekly.com.tw/focus/blog/3015062",
+  directLink: true,
+  },
+  {
+  title: "Are Taiwan’s Houses Old and Unsafe? Only Those Built After This Date Are Protected by Seismic Regulations",
+  publication: "Business Weekly",
+  date: "April 15, 2024",
+  authors: "Sammy Liu",
+  thumbnail: "assets/twhouse00.jpeg",
+  link: "https://www.businessweekly.com.tw/business/blog/3015254",
+  directLink: true,
+  },
+  {
+  title: "Taiwan Legislature Passes 2025 Central Government Budget, Cuts Over NT$207.5 Billion in Spending",
+  publication: "Public Television Service",
+  date: "January 24, 2025",
+  authors: "Sammy Liu",
+  thumbnail: "assets/legislature00.png",
+  link: "https://news.pts.org.tw/live/90",
+  directLink: true,
+  },
+  {
+  title: "\“I'm More Than This\” The Breakfast Shop Auntie's Second Life on Threads",
+  publication: "Public Television Service",
+  date: "January 24, 2025",
+  authors: "Sammy Liu",
+  thumbnail: "assets/threads00.png",
+  link: "https://news.pts.org.tw/article/735303",
+  directLink: true,
+  },
+  {
+  title: "Global Billionaires Pour Money into Singapore, but Locals Bear the 'Growing Pains'! 3 Charts Showing the Post-Pandemic Boom",
+  publication: "Business Weekly",
+  date: "April 21, 2023",
+  authors: "Sammy Liu",
+  thumbnail: "assets/singapore00.jpeg",
+  link: "https://www.businessweekly.com.tw/international/blog/3012156",
+  directLink: true,
+  },
 ];
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -237,11 +328,19 @@ clips.forEach((clip, index) => {
     </div>
   `;
 
-  card.addEventListener("click", () => openModal(index));
+  const handleOpen = () => {
+    if (clip.directLink && clip.link) {
+      window.open(clip.link, "_blank", "noopener,noreferrer");
+    } else {
+      openModal(index);
+    }
+  };
+
+  card.addEventListener("click", handleOpen);
   card.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      openModal(index);
+      handleOpen();
     }
   });
 
