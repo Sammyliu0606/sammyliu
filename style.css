@@ -45,19 +45,6 @@ body {
   padding: 24px 16px 16px;
 }
 
-.headshot {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  position: absolute;
-  top:60px;
-  left:250px;
-  object-fit: cover;
-  display: block;
-  background: #d8d8d8;
-  flex-shrink: 0;
-}
-
 .photo-name {
   padding: 12px 0 28px;
   display: flex;
@@ -246,13 +233,22 @@ body {
 .modal-card {
   background: #fff;
   border-radius: 18px;
-  padding: 60px 160px;
   max-width: 1200px;
   width: 100%;
-  max-height: 92vh;
-  overflow-y: auto;
+  height: 92vh;
+  overflow: clip;
   position: relative;
   animation: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-scroll {
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  flex: 1;
+  min-height: 0;
+  padding: 60px 160px;
 }
 
 .modal-overlay.open .modal-card {
@@ -364,19 +360,6 @@ body {
   text-align: center;
 }
 
-.modal-images {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.modal-images img {
-  width: 60%;
-  border-radius: 10px;
-  display: block;
-}
-
 .modal-process {
   margin-top: 28px;
   background: #f3f3f3;
@@ -475,13 +458,6 @@ body {
     font-size: 2.2rem;
   }
 
-  .headshot {
-    position: static;
-    width: 72px;
-    height: 72px;
-    margin-bottom: 12px;
-  }
-
   .side-cards {
     flex-direction: row;
   }
@@ -502,10 +478,6 @@ body {
 
   .side-cards {
     flex-direction: column;
-  }
-
-  .modal-card {
-    padding: 24px 20px;
   }
 
   .photo-name {

@@ -353,8 +353,7 @@ const modalClose = document.getElementById("modal-close");
 const modalTitle = document.getElementById("modal-title");
 const modalMeta  = document.getElementById("modal-meta");
 const modalAuthors = document.getElementById("modal-authors");
-const modalBody  = document.getElementById("modal-body");
-const modalImages = document.getElementById("modal-images");
+const modalBody    = document.getElementById("modal-body");
 const modalProcess = document.getElementById("modal-process");
 const modalLink  = document.getElementById("modal-link");
 
@@ -394,8 +393,6 @@ function openModal(index) {
     })
     .join("");
 
-  modalImages.innerHTML = "";
-
   if (clip.process && clip.process.length) {
     modalProcess.innerHTML = `
       <p class="modal-process-label">Behind the story</p>
@@ -417,6 +414,7 @@ function openModal(index) {
   overlay.classList.add("open");
   overlay.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
+  modalScrollEl.scrollTop = 0;
 
   // Focus close button after animation settles
   setTimeout(() => modalClose.focus(), 50);
@@ -432,6 +430,8 @@ function closeModal() {
     lastFocused = null;
   }
 }
+
+const modalScrollEl = document.querySelector(".modal-scroll");
 
 modalClose.addEventListener("click", closeModal);
 
