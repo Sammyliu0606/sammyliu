@@ -211,6 +211,7 @@ body {
 .modal-overlay {
   position: fixed;
   inset: 0;
+  overflow-y: hidden;
   background: rgba(0, 0, 0, 0.42);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
@@ -244,10 +245,11 @@ body {
 }
 
 .modal-scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
   overscroll-behavior-y: contain;
   flex: 1;
   min-height: 0;
+  max-height: 85vh;
   padding: 60px 160px;
 }
 
