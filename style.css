@@ -240,15 +240,13 @@ body {
   overflow: hidden;
   position: relative;
   animation: none;
-  display: flex;
-  flex-direction: column;
 }
 
 .modal-scroll {
+  position: absolute;
+  inset: 0;
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  flex: 1;
-  min-height: 0;
   padding: 60px 160px;
 }
 
@@ -272,6 +270,7 @@ body {
   position: absolute;
   top: 16px;
   left: 18px;
+  z-index: 10;
   background: none;
   border: none;
   font-size: 1rem;
