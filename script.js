@@ -339,7 +339,6 @@ clips.forEach((clip, index) => {
   card.addEventListener("click", handleOpen);
   card.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
       handleOpen();
     }
   });
