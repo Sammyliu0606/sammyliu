@@ -247,8 +247,7 @@ body {
 .modal-scroll {
   flex: 1;
   min-height: 0;
-  overflow-y: scroll;
-  overscroll-behavior-y: contain;
+  overflow: hidden;
   padding: 60px 160px;
 }
 
