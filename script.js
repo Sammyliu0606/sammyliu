@@ -433,27 +433,6 @@ function closeModal() {
 
 const modalScrollEl = document.querySelector(".modal-scroll");
 
-window.addEventListener("wheel", (e) => {
-  if (!overlay.classList.contains("open")) return;
-  e.preventDefault();
-  modalScrollEl.scrollTop += e.deltaY;
-}, { passive: false });
-
-let touchStartY = 0;
-
-window.addEventListener("touchstart", (e) => {
-  if (!overlay.classList.contains("open")) return;
-  touchStartY = e.touches[0].clientY;
-}, { passive: true });
-
-window.addEventListener("touchmove", (e) => {
-  if (!overlay.classList.contains("open")) return;
-  e.preventDefault();
-  const delta = touchStartY - e.touches[0].clientY;
-  modalScrollEl.scrollTop += delta;
-  touchStartY = e.touches[0].clientY;
-}, { passive: false });
-
 modalClose.addEventListener("click", closeModal);
 
 overlay.addEventListener("click", (e) => {
