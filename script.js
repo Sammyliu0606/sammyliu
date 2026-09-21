@@ -412,6 +412,7 @@ function openModal(index) {
 
   overlay.classList.add("open");
   overlay.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
   modalScrollEl.scrollTop = 0;
 
   // Focus close button after animation settles
@@ -421,6 +422,7 @@ function openModal(index) {
 function closeModal() {
   overlay.classList.remove("open");
   overlay.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
 
 
   if (lastFocused) {
@@ -452,6 +454,7 @@ const cvModalClose = document.getElementById("cv-modal-close");
 cvBtn.addEventListener("click", () => {
   cvOverlay.classList.add("open");
   cvOverlay.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden"; 
   setTimeout(() => cvModalClose.focus(), 50);
 });
 
