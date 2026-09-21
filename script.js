@@ -347,6 +347,22 @@ clips.forEach((clip, index) => {
 });
 
 // ── Modal logic ───────────────────────────────────────────────────────────────
+let savedScrollY = 0;
+
+function lockBody() {
+  savedScrollY = window.scrollY;
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${savedScrollY}px`;
+  document.body.style.width = '100%';
+}
+
+function unlockBody() {
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, savedScrollY);
+}
+
 const overlay    = document.getElementById("modal-overlay");
 const modalClose = document.getElementById("modal-close");
 const modalTitle = document.getElementById("modal-title");
@@ -412,7 +428,7 @@ function openModal(index) {
 
   overlay.classList.add("open");
   overlay.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
+  lockBody();
   modalScrollEl.scrollTop = 0;
 
   // Focus close button after animation settles
@@ -422,7 +438,7 @@ function openModal(index) {
 function closeModal() {
   overlay.classList.remove("open");
   overlay.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "";
+  unlockBody();
 
 
   if (lastFocused) {
@@ -454,13 +470,14 @@ const cvModalClose = document.getElementById("cv-modal-close");
 cvBtn.addEventListener("click", () => {
   cvOverlay.classList.add("open");
   cvOverlay.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden"; 
+  lockBody();
   setTimeout(() => cvModalClose.focus(), 50);
 });
 
 function closeCvModal() {
   cvOverlay.classList.remove("open");
   cvOverlay.setAttribute("aria-hidden", "true");
+  unlockBody();
   cvBtn.focus();
 }
 
