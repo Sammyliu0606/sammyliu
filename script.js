@@ -433,18 +433,21 @@ function closeModal() {
 
 const modalScrollEl = document.querySelector(".modal-scroll");
 
-overlay.addEventListener("wheel", (e) => {
+window.addEventListener("wheel", (e) => {
+  if (!overlay.classList.contains("open")) return;
   e.preventDefault();
   modalScrollEl.scrollTop += e.deltaY;
 }, { passive: false });
 
 let touchStartY = 0;
 
-overlay.addEventListener("touchstart", (e) => {
+window.addEventListener("touchstart", (e) => {
+  if (!overlay.classList.contains("open")) return;
   touchStartY = e.touches[0].clientY;
 }, { passive: true });
 
-overlay.addEventListener("touchmove", (e) => {
+window.addEventListener("touchmove", (e) => {
+  if (!overlay.classList.contains("open")) return;
   e.preventDefault();
   const delta = touchStartY - e.touches[0].clientY;
   modalScrollEl.scrollTop += delta;
