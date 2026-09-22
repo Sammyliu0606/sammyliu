@@ -429,7 +429,7 @@ function openModal(index) {
   overlay.classList.add("open");
   overlay.setAttribute("aria-hidden", "false");
   lockBody();
-  modalScrollEl.scrollTop = 0;
+  overlay.scrollTop = 0;
 
   // Focus close button after animation settles
   setTimeout(() => modalClose.focus(), 50);
@@ -446,14 +446,6 @@ function closeModal() {
     lastFocused = null;
   }
 }
-
-const modalScrollEl = document.querySelector(".modal-scroll");
-
-window.addEventListener("wheel", (e) => {
-  if (!overlay.classList.contains("open")) return;
-  e.preventDefault();
-  modalScrollEl.scrollTop += e.deltaY;
-}, { passive: false });
 
 modalClose.addEventListener("click", closeModal);
 
