@@ -370,12 +370,6 @@ const modalMeta  = document.getElementById("modal-meta");
 const modalAuthors = document.getElementById("modal-authors");
 const modalBody    = document.getElementById("modal-body");
 const modalProcess = document.getElementById("modal-process");
-document.addEventListener('wheel', (e) => {
-  if (!overlay.classList.contains('open')) return;
-  console.log('fires', e.target, e.deltaY);
-  e.preventDefault();
-  overlay.scrollTop += e.deltaY;
-}, { passive: false });
 
 const modalLink  = document.getElementById("modal-link");
 
@@ -436,7 +430,7 @@ function openModal(index) {
   overlay.classList.add("open");
   overlay.setAttribute("aria-hidden", "false");
   lockBody();
-  overlay.scrollTop = 0;
+  document.getElementById('modal-scroller').scrollTop = 0;
 
   // Focus close button after animation settles
   setTimeout(() => modalClose.focus(), 50);
@@ -456,8 +450,8 @@ function closeModal() {
 
 modalClose.addEventListener("click", closeModal);
 
-overlay.addEventListener("click", (e) => {
-  if (e.target === overlay) closeModal();
+document.getElementById('modal-scroller').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('modal-scroller')) closeModal();
 });
 
 document.addEventListener("keydown", (e) => {
