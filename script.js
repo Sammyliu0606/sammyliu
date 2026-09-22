@@ -370,6 +370,11 @@ const modalMeta  = document.getElementById("modal-meta");
 const modalAuthors = document.getElementById("modal-authors");
 const modalBody    = document.getElementById("modal-body");
 const modalProcess = document.getElementById("modal-process");
+modalProcess.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  overlay.scrollTop += e.deltaY;
+}, { passive: false });
+
 const modalLink  = document.getElementById("modal-link");
 
 let lastFocused = null;
