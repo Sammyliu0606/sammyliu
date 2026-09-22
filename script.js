@@ -370,7 +370,7 @@ const modalMeta  = document.getElementById("modal-meta");
 const modalAuthors = document.getElementById("modal-authors");
 const modalBody    = document.getElementById("modal-body");
 const modalProcess = document.getElementById("modal-process");
-document.querySelector('.modal-scroll').addEventListener('wheel', (e) => {
+document.querySelector('.modal-card').addEventListener('wheel', (e) => {
   e.preventDefault();
   overlay.scrollTop += e.deltaY;
 }, { passive: false });
