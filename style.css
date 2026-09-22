@@ -241,9 +241,9 @@ body {
 }
 
 .modal-scroll {
-  height: calc(90vh - 48px);
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
-  overscroll-behavior-y: contain;
   padding: 60px 160px;
 }
 

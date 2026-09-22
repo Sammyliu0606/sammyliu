@@ -449,6 +449,12 @@ function closeModal() {
 
 const modalScrollEl = document.querySelector(".modal-scroll");
 
+window.addEventListener("wheel", (e) => {
+  if (!overlay.classList.contains("open")) return;
+  e.preventDefault();
+  modalScrollEl.scrollTop += e.deltaY;
+}, { passive: false });
+
 modalClose.addEventListener("click", closeModal);
 
 overlay.addEventListener("click", (e) => {
